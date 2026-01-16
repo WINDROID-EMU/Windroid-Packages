@@ -92,8 +92,8 @@ jobs:
         prerelease: false
         files: |
           /mnt/arch/MiceWine-Packages/index.json
-          /mnt/arch/MiceWine-Packages/*.rat
-          /mnt/arch/MiceWine-Packages/MiceWine-Packages.zip
+          /mnt/arch/*.rat
+          /mnt/arch/*.zip
           /mnt/arch/MiceWine-Packages/components/DXVK/*.rat
           /mnt/arch/MiceWine-Packages/components/WineD3D/*.rat
           /mnt/arch/MiceWine-Packages/components/VKD3D/*.rat
