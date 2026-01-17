@@ -37,6 +37,7 @@ getElementFromHeader()
 
 export RAND_VAL=$RANDOM
 
+mkdir -p "$INIT_DIR/components"
 mkdir -p /tmp/$RAND_VAL
 
 cd /tmp/$RAND_VAL
@@ -66,7 +67,7 @@ done
 
 mv new_makeSymlinks.sh makeSymlinks.sh
 
-$INIT_DIR/tools/create-rat-pkg.sh "MiceWine-Core" "MiceWine Core" "" "$ARCH" "($GIT_SHORT_SHA)" "Core" "$PWD" "$INIT_DIR"
+$INIT_DIR/tools/create-rat-pkg.sh "MiceWine-Core" "MiceWine Core" "" "$ARCH" "($GIT_SHORT_SHA)" "Core" "$PWD" "$INIT_DIR/components"
 
 cd "$INIT_DIR"
 
