@@ -74,7 +74,7 @@ jobs:
 
     - name: "Move Components Packages to Components Folder"
       run: |
-        sudo arch-chroot /mnt/arch bash -c "cd /MiceWine-Packages && ./move-components-rat.sh"
+        sudo arch-chroot /mnt/arch bash -c "cd /MiceWine-Packages && ./tools/move-components-rat.sh"
 
     - name: "Download External Packages"
       run: |

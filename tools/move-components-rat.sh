@@ -26,6 +26,7 @@ getElementFromHeader()
 
 export RAND_VAL=$RANDOM
 
+mkdir -p "$INIT_DIR/components"
 mkdir -p /tmp/$RAND_VAL
 
 cd /tmp/$RAND_VAL
