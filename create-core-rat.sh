@@ -67,7 +67,7 @@ done
 
 mv new_makeSymlinks.sh makeSymlinks.sh
 
-$INIT_DIR/tools/create-rat-pkg.sh "MiceWine-Core" "MiceWine Core" "" "$ARCH" "($GIT_SHORT_SHA)" "Core" "$PWD" "$INIT_DIR/components"
+$INIT_DIR/tools/create-rat-pkg.sh "MiceWine-Core" "MiceWine Core" "" "$ARCH" "$GIT_SHORT_SHA" "Core" "$PWD" "$INIT_DIR/components"
 
 cd "$INIT_DIR"
 
