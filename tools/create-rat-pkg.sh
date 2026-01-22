@@ -16,8 +16,8 @@ symlinkToSh() {
         if [ "$target" != "nul" ]; then
           rm "$file"
 
-          target=$(echo $target | sed "s@$WORKDIR@\$1@g")
-          file=$(echo $file | sed "s@$WORKDIR@\$1@g")
+          target=$(echo $target | sed "s@$WORKDIR@\$1/@g")
+          file=$(echo $file | sed "s@$WORKDIR@\$1/@g")
 
           echo "ln -sf $target $file" >> $WORKDIR/makeSymlinks.sh
         fi
