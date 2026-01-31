@@ -11,7 +11,7 @@ curl -LO# "https://dl.winehq.org/wine/wine-gecko/$GECKO_VERSION/wine-gecko-$GECK
 curl -LO# "https://dl.winehq.org/wine/wine-gecko/$GECKO_VERSION/wine-gecko-$GECKO_VERSION-x86.tar.xz"
 
 mkdir -p ../destdir-pkg/$PREFIX
-mkdir -p ../destdir-pkg/$PREFIX/../wine/share/{mono,gecko}
+mkdir -p ../destdir-pkg/$PREFIX/../wine/share/wine/{mono,gecko}
 
 tar -xf "wine-mono-$MONO_VERSION-x86.tar.xz" -C ../destdir-pkg/$PREFIX/../wine/share/wine/mono
 tar -xf "wine-gecko-$GECKO_VERSION-x86.tar.xz" -C ../destdir-pkg/$PREFIX/../wine/share/wine/gecko
