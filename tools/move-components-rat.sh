@@ -1,10 +1,10 @@
 #!/bin/bash
-export PREFIX=/data/data/com.micewine.emu/files/usr
+export PREFIX=/data/data/com.windroid.emu/files/usr
 export INIT_DIR=$PWD
 export GIT_SHORT_SHA=$(git rev-parse --short HEAD)
 
 if [ ! -d "$INIT_DIR/built-pkgs" ]; then
-  echo "built-pkgs: Don't Exist. Run 'build-all.sh' for generate the required packages for creating a core package for MiceWine."
+  echo "built-pkgs: Don't Exist. Run 'build-all.sh' for generate the required packages for creating a core package for Windroid."
   exit 0
 fi
 

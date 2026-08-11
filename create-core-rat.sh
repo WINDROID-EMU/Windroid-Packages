@@ -9,13 +9,13 @@ if [ "$1" != "aarch64" ] && [ "$1" != "x86_64" ]; then
   exit 0
 fi
 
-export PREFIX=/data/data/com.micewine.emu/files/usr
+export PREFIX=/data/data/com.windroid.emu/files/usr
 export INIT_DIR=$PWD
 export ARCH=$1
 export GIT_SHORT_SHA=$(git rev-parse --short HEAD)
 
 if [ ! -d "$INIT_DIR/built-pkgs" ]; then
-  echo "built-pkgs: Don't Exist. Run 'build-all.sh' for generate the required packages for creating a core package for MiceWine."
+  echo "built-pkgs: Don't Exist. Run 'build-all.sh' for generate the required packages for creating a core package for Windroid."
   exit 0
 fi
 
@@ -70,7 +70,7 @@ done
 
 mv new_makeSymlinks.sh makeSymlinks.sh
 
-$INIT_DIR/tools/create-rat-pkg.sh "MiceWine-Core" "MiceWine Core" "" "$ARCH" "$GIT_SHORT_SHA" "Core" "$PWD" "$INIT_DIR/components"
+$INIT_DIR/tools/create-rat-pkg.sh "Windroid-Core" "Windroid Core" "" "$ARCH" "$GIT_SHORT_SHA" "Core" "$PWD" "$INIT_DIR/components"
 
 cd "$INIT_DIR"
 
